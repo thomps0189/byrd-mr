@@ -10,7 +10,7 @@ function Nav() {
         <li>
           <a href="#tutorials">Tutorials</a>
         </li>
-        <div>
+        <div id="image-div">
           <img id="header-img" src={HeaderLogo} alt="logo" />
         </div>
         {/* <HeaderLogo /> */}

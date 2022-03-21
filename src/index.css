@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Archivo";
-  src: local("Archivo"), url(./assets/Fonts/Archivo-Bold.ttf) format("truetype");
+  src: local("Archivo"), url(./assets/Fonts/Archivo-Medium.ttf) format("truetype");
 }
 body {
   margin: 0;
@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f3f3ec;
+  background-color: #fcfcfc;
 }
 
 code {
@@ -21,10 +21,13 @@ code {
 
 #header-img {
   object-fit: contain;
-  width: 150px;
-  height: 100px;
-  margin-left: 5em;
+  width: 15em;
+  height: 10em;
   margin-top: 0em;
+}
+
+#image-div {
+  margin: 0 10em 0 10em;
 }
 
 /* nav {
@@ -37,12 +40,13 @@ ul {
   justify-content:space-around;
   margin-top: 10px;
   padding: 10px;
+  position: relative;
+  align-items: center;
   
 }
 
 li {
   text-decoration: none;
-  
 }
 
 a {
