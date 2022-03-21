@@ -1,6 +1,18 @@
+:root {
+  --background-color: #f4f1ed;
+  --white: #ffffff;
+  --light-brown: #e3dfdb;
+}
+
 @font-face {
-  font-family: "Archivo";
-  src: local("Archivo"), url(./assets/Fonts/Archivo-Medium.ttf) format("truetype");
+  font-family: Archivo-Medium;
+  src: local("Archivo"), url(./assets/Fonts/Archivo-Medium.ttf) ;
+  
+}
+
+@font-face {
+  font-family: Archivo-Bold;
+  src: url(./assets/Fonts/Archivo-Bold.ttf);
 }
 body {
   margin: 0;
@@ -9,7 +21,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fcfcfc;
+  background-color: var(--background-color);
 }
 
 code {
@@ -30,15 +42,12 @@ code {
   margin: 0 10em 0 10em;
 }
 
-/* nav {
-  margin-top: 10em;
-} */
-
 ul {
   list-style-type: none;
   display: flex;
   justify-content:space-around;
   margin-top: 10px;
+  margin-bottom: 0em;
   padding: 10px;
   position: relative;
   align-items: center;
@@ -52,6 +61,48 @@ li {
 a {
   text-decoration: none;
   color: #2c2a2e;
-  font-family: Archivo;
+  font-family: Archivo-Medium;
 }
 /*  HERO SECTION  */
+
+#hero {
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#img-div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#drone-img {
+  width: 25em;
+  height: 25em;
+  position: relative;
+  
+  
+}
+
+#drone-shadow {
+  position: absolute;
+  padding-left: 15px;
+  width: 23em;
+}
+
+h1 {
+  font-family: Archivo-Bold;
+  font-size: 14.5em;
+  color: var(--white);
+  margin: 0;
+}
+
+#hero-comment {
+  color: var(--light-brown);
+  font-family: Archivo-Medium;
+  margin-bottom: 1em;
+}
