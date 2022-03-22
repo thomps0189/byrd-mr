@@ -1,6 +1,7 @@
 import React from "react";
 const HeaderLogo = require("../../assets/Images/Logo.png");
-function Nav() {
+function Nav(props) {
+  const { contactSelected, setContactSelected } = props;
   return (
     <nav>
       <ul>
@@ -11,14 +12,18 @@ function Nav() {
           <a href="#tutorials">Tutorials</a>
         </li>
         <div id="image-div">
-          <img id="header-img" src={HeaderLogo} alt="logo" />
+          <a href="/">
+            <img id="header-img" src={HeaderLogo} alt="logo" />
+          </a>
         </div>
         {/* <HeaderLogo /> */}
         <li>
           <a href="#blog">Blog</a>
         </li>
-        <li>
-          <a href="#Contact">Contact</a>
+        <li className={`${contactSelected && "navActive"}`}>
+          <a onClick={() => setContactSelected(true)} href="#Contact">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

@@ -2,6 +2,8 @@
   --background-color: #f4f1ed;
   --white: #ffffff;
   --light-brown: #e3dfdb;
+  --dark-brown: #675e5a;
+  --medium-brown: #aaa39f;
 }
 
 @font-face {
@@ -105,4 +107,57 @@ h1 {
   color: var(--light-brown);
   font-family: Archivo-Medium;
   margin-bottom: 1em;
+}
+
+/* CONTACT SECTION */
+
+#form-container {
+  margin: 0 auto;
+  width: 50%;
+ 
+  
+}
+
+#contact-form {
+  
+  display: flex;
+  flex-direction: column;
+  color: var(--dark-brown);
+}
+
+#full-name, #email {
+  background-color: var(--background-color);
+  border: none;
+  border-bottom: 2px solid var(--medium-brown);
+  outline: none;
+  margin: 1em;
+  padding: 1em;
+}
+
+#message {
+  background-color: var(--background-color);
+  border: none;
+  border-bottom: 2px solid var(--medium-brown);
+  outline: none;
+  margin: 1em;
+  
+  height: 50px;
+  
+}
+
+#submit-btn {
+  background-color: orangered;
+  border: none;
+  color: var(--white);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 1em;
+}
+
+#form-header {
+  color: var(--dark-brown);
+  font-weight: bold;
 }
