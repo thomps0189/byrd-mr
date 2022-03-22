@@ -161,3 +161,9 @@ h1 {
   color: var(--dark-brown);
   font-weight: bold;
 }
+
+/*  MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+  
+}
